@@ -1,136 +1,146 @@
 # Analise_AdventureWorks
 EN: Power BI project using the Adventure Works dataset, featuring Sales Overview, Product Performance and Financial Analysis dashboards with KPIs, trends and insights for decision-making.  PT: Projeto em Power BI com o dataset Adventure Works, focado em vendas, performance de produtos e análise financeira com KPIs e insights.
 
-# Adventure Works – Power BI Dashboard
+# 📊 Adventure Works – Power BI Analysis
 
-## 🇺🇸 EN – Project Overview
+## 🇺🇸 English
 
-### 📊 Objective
+This repository contains a **Power BI data analysis project** built using the **Adventure Works DW** dataset. The objective of this project is to demonstrate skills in **data modeling, DAX, KPI definition, and dashboard design**, focusing on business-oriented insights.
 
-This project aims to demonstrate data analysis and dashboard design skills using **Power BI**, focusing on sales performance, product analysis and financial insights to support business decision-making.
+The project is organized into **three analytical dashboards**, each one addressing a different business perspective:
 
-### 🗄 Dataset
+---
 
-* **Adventure Works DW 2022** (Microsoft sample database)
-* Fact tables: Sales, Internet Sales
-* Dimension tables: Date, Product, Customer, Geography
+## 🔹 1. Sales Overview
 
-### 📈 Dashboards
+**Goal:** Provide a high-level view of sales performance over time and geography.
 
-The project is composed of three main dashboards:
+**Main insights:**
 
-1. **Sales Overview**
+* Total Sales
+* Sales Year-over-Year (YoY %)
+* Total Orders
+* Quantity Sold
+* Average Ticket
+* Sales trend vs. Previous Year
+* Sales distribution by Product Category
+* Sales by State (Map)
 
-   * Sales trend over time
-   * Comparison with previous year
-   * Sales by geography and category
+**Preview:**
+![Sales Overview](images/sales_overview.png)
 
-2. **Product Performance**
+---
 
-   * Top products by sales and quantity
-   * Product ranking (RANKX)
-   * Category performance analysis
+## 🔹 2. Product Performance
 
-3. **Financial Overview**
+**Goal:** Analyze product-level performance focusing on revenue, profitability, and volume.
 
-   * Total Sales, Total Cost and Profit
-   * Profit Margin (%)
-   * Average Ticket
-   * Revenue → Cost → Profit flow
+**Main insights:**
 
-### 📌 Key KPIs
+* Total Sales, Cost, Profit and Margin
+* Top 10 Products by Revenue
+* Most Profitable Products
+* Units Sold
+* Price vs Revenue analysis
+* Detailed product table with ranking logic
+
+**Preview:**
+![Product Performance](images/product_performance.png)
+
+---
+
+## 🔹 3. Financial Overview
+
+**Goal:** Provide a financial perspective combining revenue, cost, and profit analysis.
+
+**Main insights:**
+
+* Revenue, Cost and Profit KPIs
+* Profit Margin %
+* Revenue vs Profit trend
+* Profit Margin by Category
+* Cost, Revenue and Profit comparison by Category
+
+**Preview:**
+![Financial Overview](images/financial_overview.png)
+
+---
+
+## 🧮 Key DAX Metrics
+
+Some of the main DAX measures used in this project:
 
 * Total Sales
 * Total Cost
 * Profit
-* Profit Margin (%)
-* Sales Quantity
+* Profit Margin %
 * Average Ticket
-* Product Rank
+* Sales YoY %
+* Product Rank (RANKX)
 
-### 🛠 Tools & Technologies
-
-* Power BI Desktop
-* DAX (Time Intelligence, Ranking, KPIs)
-* Data Modeling (Star Schema)
+The model follows best practices in **star schema**, using fact and dimension tables from Adventure Works DW.
 
 ---
 
-## 🇧🇷 PT – Visão Geral do Projeto
-
-### 📊 Objetivo
-
-Este projeto tem como objetivo demonstrar habilidades em **análise de dados e visualização no Power BI**, com foco em desempenho de vendas, análise de produtos e indicadores financeiros para apoio à tomada de decisão.
-
-### 🗄 Base de Dados
-
-* **Adventure Works DW 2022** (base de dados exemplo da Microsoft)
-* Tabelas fato: Vendas, Vendas Online
-* Tabelas dimensão: Data, Produto, Cliente e Geografia
-
-### 📈 Dashboards
-
-O projeto é composto por três dashboards principais:
-
-1. **Sales Overview (Visão Geral de Vendas)**
-
-   * Evolução das vendas ao longo do tempo
-   * Comparação com o ano anterior
-   * Vendas por localização e categoria
-
-2. **Product Performance (Performance de Produtos)**
-
-   * Ranking de produtos por vendas e quantidade
-   * Análise por categoria
-   * Destaque para produtos mais relevantes
-
-3. **Financial Overview (Visão Financeira)**
-
-   * Receita, Custo e Lucro
-   * Margem de lucro (%)
-   * Ticket médio
-   * Fluxo Receita → Custo → Lucro
-
-### 📌 Principais KPIs
-
-* Total de Vendas
-* Custo Total
-* Lucro
-* Margem de Lucro (%)
-* Quantidade Vendida
-* Ticket Médio
-* Ranking de Produtos
-
-### 🛠 Ferramentas Utilizadas
-
-* Power BI Desktop
-* DAX (Time Intelligence, Ranking, KPIs)
-* Modelagem de Dados (Esquema Estrela)
-
----
-
-## 🖼 Dashboard Preview
-
-> *(Add images in the `/images` folder)*
-
-* Sales Overview
-* Product Performance
-* Financial Overview
-
----
-
-## 📂 Repository Structure
+## 📁 Project Structure
 
 ```
-├── images/
+Analyse_AdventureWorks/
+│
 ├── pbix/
-│   └── AdventureWorks_Dashboard.pbix
+│   └── AdventureWorks_Analysis.pbix
+│
+├── images/
+│   ├── sales_overview.png
+│   ├── product_performance.png
+│   └── financial_overview.png
+│
 └── README.md
 ```
 
 ---
 
-## 👤 Author
+## 📥 Power BI File
 
-**Alan Cristian Santos Rocha**
-Power BI | Data Analytics | SQL | DAX
+You can download and explore the full Power BI report here:
+
+👉 **[Download PBIX](pbix/AdventureWorks_Analysis.pbix)**
+
+---
+
+## 🇧🇷 Português
+
+Este repositório contém um **projeto de análise de dados em Power BI** utilizando o dataset **Adventure Works DW**. O objetivo é demonstrar habilidades em **modelagem de dados, DAX, definição de KPIs e construção de dashboards**, com foco em análises orientadas ao negócio.
+
+O projeto está dividido em **três dashboards analíticos**:
+
+---
+
+### 🔹 1. Sales Overview
+
+Visão executiva das vendas ao longo do tempo e por localização.
+
+---
+
+### 🔹 2. Product Performance
+
+Análise detalhada do desempenho dos produtos considerando receita, lucro e volume.
+
+---
+
+### 🔹 3. Financial Overview
+
+Visão financeira com foco em receita, custos, lucro e margem.
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Este projeto foi desenvolvido para **portfólio profissional**, com foco em vagas de **Data Analyst / BI Analyst**, demonstrando domínio técnico e capacidade analítica aplicada a cenários reais de negócio.
+
+---
+
+📌 *Dataset: Adventure Works DW*
+📌 *Ferramenta: Microsoft Power BI*
+📌 *Autor: Alan Cristian Santos Rocha*
+
